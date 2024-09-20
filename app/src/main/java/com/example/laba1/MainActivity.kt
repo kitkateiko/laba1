@@ -5,7 +5,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-
+import android.widget.Toast
+import android.view.View
+import android.widget.EditText
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,4 +19,13 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+    fun season(view: View)
+    {
+        val x = findViewById<EditText>(R.id.editTextNumber)
+        when(x.text.toString().toInt())
+        { 1 -> Toast.makeText(this,"ТЕСТ",Toast.LENGTH_SHORT).show()
+
+        }
+    }
+
 }
