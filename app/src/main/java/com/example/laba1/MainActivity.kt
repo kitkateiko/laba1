@@ -23,9 +23,14 @@ class MainActivity : AppCompatActivity() {
     {
         val x = findViewById<EditText>(R.id.editTextNumber)
         when(x.text.toString().toInt())
-        { 1 -> Toast.makeText(this,"ТЕСТ",Toast.LENGTH_SHORT).show()
-
+        {
+            1 -> Toast.makeText(this,"Зима",Toast.LENGTH_SHORT).show()
+            2 -> Toast.makeText(this,"Весна",Toast.LENGTH_SHORT).show()
+            3 -> Toast.makeText(this,"Лето",Toast.LENGTH_SHORT).show()
+            4 -> Toast.makeText(this,"Осень",Toast.LENGTH_SHORT).show()
+            else -> Toast.makeText(this,"ВВЕДИТЕ ЧИСЛО ОТ 1 ДО 4",Toast.LENGTH_SHORT).show()
         }
+
     }
 
 }
